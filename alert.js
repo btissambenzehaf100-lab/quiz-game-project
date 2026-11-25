@@ -20,4 +20,10 @@ else {
     console.log("wrong")
 }
 
-let qui
+let quiz4 = prompt("Which of these animals can fly: eagle, lion, parrot?","")
+if (quiz4==="eagle" || quiz4==="parrot") {
+    console.log("correct")
+}
+else{
+    console.log("wrong")
+}
