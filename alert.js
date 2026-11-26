@@ -1,26 +1,26 @@
 let playerName = prompt("what is your name?", "")
-function welcome(playerName) {
+function welcome(playerName = "guest") {
     alert("Welcome " + playerName + " to the Quiz Game")
 }
-welcome(playerName)
+welcome()
 
 function showInstructions() {
     alert("Answer all the questions to get your final score")
 }
 showInstructions()
 
-
 function quiz(question, correctAnswer) {
     let answer = prompt(question, "")
     if (answer === correctAnswer) {
         console.log("correct")
+        return true;
     }
 
     else {
         console.log("wrong")
+        return false;
     }
 }
-
 
 quiz("what is the capital of france?", "paris")
 
@@ -35,7 +35,7 @@ else{
 }
 
 let quiz2= prompt("Which of these animals can fly: eagle, lion, parrot?","")
-if (quiz2=== "eagle" || quiz2 === "parrot"){
+if (quiz2 === "eagle" || quiz2 === "parrot"){
     console.log("correct")
 }
 else{
