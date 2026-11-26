@@ -1,7 +1,8 @@
-function welcome() {
-    alert("Welcome to the Quiz Game")
+let playerName= prompt("what is your name?","")
+function welcome(playerName) {
+    alert("Welcome " +playerName+ " to the Quiz Game")
 }
-welcome()
+welcome(playerName)
 
 function showInstructions() {
     alert("Answer all the questions to get your final score")
