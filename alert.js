@@ -1,6 +1,6 @@
-let playerName= prompt("what is your name?","")
+let playerName = prompt("what is your name?", "")
 function welcome(playerName) {
-    alert("Welcome " +playerName+ " to the Quiz Game")
+    alert("Welcome " + playerName + " to the Quiz Game")
 }
 welcome(playerName)
 
@@ -47,4 +47,13 @@ else {
     console.log("wrong");
 }
 
+function quiz(question, correctAnswer) {
+    let answer = prompt(question, "")
+    if (answer === correctAnswer) {
+        console.log("correct")
+    }
 
+    else {
+        console.log("wrong")
+    }
+}
