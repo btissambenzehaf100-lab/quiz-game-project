@@ -1,3 +1,13 @@
+function welcome() {
+    alert("Welcome to the Quiz Game")
+}
+welcome()
+
+function showInstructions() {
+    alert("Answer all the questions to get your final score")
+}
+showInstructions()
+
 let quiz1 = prompt("what is the capital of france?", "")
 if (quiz1 === "paris") {
     console.log("correct");
@@ -33,5 +43,7 @@ if (!(quiz5 % 2 == 0)) {
     console.log("correct");
 }
 else {
-    console.log("wrong")
+    console.log("wrong");
 }
+
+
