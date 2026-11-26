@@ -1,8 +1,13 @@
 let playerName = prompt("what is your name?", "")
 function welcome(playerName = "guest") {
-    alert("Welcome " + playerName + " to the Quiz Game")
+    if (playerName ==="" || playerName===null){
+        alert("welcome guest to the quiz")
+    }
+    else {
+        alert("Welcome " + playerName + " to the Quiz Game")
+    }
 }
-welcome()
+welcome(playerName)
 
 function showInstructions() {
     alert("Answer all the questions to get your final score")
