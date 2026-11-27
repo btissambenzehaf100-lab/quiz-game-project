@@ -14,8 +14,11 @@ function showInstructions() {
 }
 showInstructions()
 
+let answers =[];
+
 function quiz(question, correctAnswer) {
     let answer = prompt(question, "")
+    answers.push(answer);
     if (answer === correctAnswer) {
         console.log("correct")
         return true;
@@ -27,12 +30,15 @@ function quiz(question, correctAnswer) {
     }
 }
 
+
+
 quiz("what is the capital of france?", "paris")
 
 quiz("How many planets are in the solar system?","8")
 
 function quizAnd(){
     let quiz1 = prompt("Which number is greater than 10 and less than 20?","")
+    answers.push(quizAnd)
 if ( quiz1 > 10 && quiz1 < 20 ){
 console.log("correct")
 }
@@ -45,6 +51,7 @@ quizAnd()
 
 function quizOr(){
     let quiz2= prompt("Which of these animals can fly: eagle, lion, parrot?","")
+    answers.push(quizOr)
 if (quiz2 === "eagle" || quiz2 === "parrot"){
     console.log("correct")
 }
@@ -56,6 +63,7 @@ quizOr()
 
 function quizNot(){
     let quiz3= prompt("Which of these numbers is NOT even : 12, 7, 8","")
+    answers.push(quizNot)
 if(!(quiz3 % 2 == 0)){
 console.log("correct")
 }
@@ -64,3 +72,5 @@ else{
 }
 }
 quizNot()
+
+console.log(answers)
