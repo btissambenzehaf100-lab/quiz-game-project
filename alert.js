@@ -31,26 +31,36 @@ quiz("what is the capital of france?", "paris")
 
 quiz("How many planets are in the solar system?","8")
 
-let quiz1 = prompt("Which number is greater than 10 and less than 20?","")
+function quizAnd(){
+    let quiz1 = prompt("Which number is greater than 10 and less than 20?","")
 if ( quiz1 > 10 && quiz1 < 20 ){
 console.log("correct")
 }
 else{
     console.log("wrong")
 }
+}
 
-let quiz2= prompt("Which of these animals can fly: eagle, lion, parrot?","")
+quizAnd()
+
+function quizOr(){
+    let quiz2= prompt("Which of these animals can fly: eagle, lion, parrot?","")
 if (quiz2 === "eagle" || quiz2 === "parrot"){
     console.log("correct")
 }
 else{
     console.log("wrong")
 }
+}
+quizOr()
 
-let quiz3= prompt("Which of these numbers is NOT even : 12, 7, 8","")
+function quizNot(){
+    let quiz3= prompt("Which of these numbers is NOT even : 12, 7, 8","")
 if(!(quiz3 % 2 == 0)){
 console.log("correct")
 }
 else{
     console.log("wrong")
 }
+}
+quizNot()
